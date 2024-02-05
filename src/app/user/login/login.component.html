@@ -1,0 +1,27 @@
+<body class="container mt-4">
+        <h1 id="clg">Sample Engineering College</h1>
+       
+        <div class="background mt-5">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">        
+            <div id="form" class="form-control" action="" method="get" >
+              <h3>Student Login</h3>
+    
+                <label for="username">Email</label>
+                <input class="form-control" type="text" placeholder="Enter your Email" id="username" [(ngModel)]="email">
+    
+                <label for="password">Password</label>
+                <input class="form-control" type="password"  placeholder="Password" id="password" [(ngModel)]="password">
+            <div class="row">
+                <div class="col"><button style="color: white;" class="btn btn-primary" (click)="loginUser()">Log In</button> </div>
+                <div class="col"><button style="color: white;" class="btn btn-dark">Cancel</button>  </div>
+            </div>
+                <div>
+                <br>
+                <p>New User?<a (click)="navigateToRegisterComponent()">Resister Here!</a></p>
+                </div>
+            </div>
+        </div>
+</body>

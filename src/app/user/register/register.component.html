@@ -1,0 +1,74 @@
+<body>  
+  <div class="container">
+    
+   <article class="card-body mx-auto" style="max-width: 400px;">
+      <h4 class="card-title mt-3 text-center">Create Account</h4>
+      <p class="text-center">Sample Engineering College</p>
+        <p>
+          <a href="https://twitter.com/i/flow/login" target="_blank" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+          <a href="https://www.facebook.com/" target="_blank" class="btn btn-block btn-facebook ms-5"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+        </p>
+      <p class="divider-text">
+          <span class="bg-light">OR</span>
+      </p>
+      
+        <div class="form-group input-group">
+          <div class="input-group-prepend mt-1">
+              <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+            <input name="" class="form-control" required placeholder="Full name" type="text" [(ngModel)]="name">
+        </div>
+        <div class="form-group input-group mt-2">
+          <div class="input-group-prepend mt-1">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+           </div>
+          <input name="" class="form-control" required placeholder="Email address" type="email" [(ngModel)]="email">
+        </div> 
+        <div class="form-group input-group mt-2">
+          <div class="input-group-prepend mt-1">
+              <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+          </div>
+          <select class="form-select" style="max-width: 75px;">
+              <option selected="">+91</option>
+              <option value="1">+143</option>
+              <option value="2">+52</option>
+              <option value="3">+1</option>
+              <option value="4">+44</option>
+              <option value="5">+86</option>
+          </select>
+          <input name="" class="form-control" required placeholder="Phone number" [(ngModel)]="phone" type="text">
+        </div> 
+        <div class="form-group input-group mt-2">
+          <div class="input-group-prepend mt-1 ">
+              <span class="input-group-text mt-1"> <i class="fa fa-building"></i> </span>
+          </div>
+          <select class="form-control mt-1" required [(ngModel)]="dept">
+            <option value="" disabled selected>Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="AI&DS">AI&DS</option> 
+          </select>
+        </div> 
+        <div class="form-group input-group mt-2">
+          <div class="input-group-prepend mt-1">
+              <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" required placeholder="Create password" type="password" [(ngModel)]="password">
+        </div> 
+        <div class="form-group input-group mt-2">
+          <div class="input-group-prepend mt-1">
+              <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" required placeholder="Repeat password" type="password" [(ngModel)]="cpassword">
+        </div>                                       
+        <div class="form-group mt-2">
+          <button id="crt1" type="button" class="btn btn-primary btn-block" (click)="regUser()" >Create Account</button>
+          <button id="cnl" type="button" class="btn btn-primary btn-secondary" (click)="resetreg()">Cancel</button>
+        </div>     
+        <div class="form-group input-group mt-3">
+        <p>Already have an account? </p><a id="navi" (click)="navigateToLoginComponent()"> Login</a>
+        </div>                                                                
+      
+    </article>
+  </div>
+</body>

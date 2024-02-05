@@ -1,0 +1,59 @@
+marquee{
+    font-size: xx-large;
+    color: black;
+    font-family:'Gill Sans';
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    // background-image: url('../../../assets/IMAGES/clg.jpg'); /* Adjust the path as needed */
+    background-size:cover;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+  }
+
+  p{
+    color: white;
+  }
+  /* styles.css */
+
+  
+  nav {
+    // padding: 15px;
+    position:static;
+    top: 0;
+    width: 100%;
+    // z-index: 1000;
+    background-color:goldenrod; /* Set background color for the navigation bar */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Clear floats and create a new formatting context */
+  }
+  
+  li {
+    float: right; /* Float the list items to create a horizontal layout */
+  }
+  
+  a {
+    display: block; /* Turn the link into a block-level element */
+    color: white; /* Set text color for links */
+    text-align: center; /* Center-align text within the links */
+    padding: 14px 16px; /* Add padding to the links for better spacing */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  a:hover {
+    background-color: #000000; /* Change background color on hover */
+  }
+  
+  #img1{
+    position: relative;
+  }
